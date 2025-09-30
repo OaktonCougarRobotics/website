@@ -646,6 +646,12 @@ a.interestLink {
     padding: 0 10vw 4vw 10vw;
     color:#521616;
 }
+.awardHistoryHeader2 {
+    font-size: 4vw;
+    text-align: center;
+    padding: 5vw 10vw 4vw 10vw;
+    color:#521616;
+}
 .awardHistory1 {
     font-size: 1.5vw;
     text-align: justify;
