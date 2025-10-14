@@ -639,6 +639,18 @@ a.interestLink {
     padding: 25px 0 0 0;
 }
 
+.flashingDates {
+    background-color:rgb(72, 4, 4);
+    vertical-align: center;
+    text-align: center;
+    padding: 1vw 0 1vw 0;
+    margin-top: -0.5vw;
+}
+.fundraisingText {
+    color: white;
+    font-size: 2vw;
+}
+
 /*----------------------------Award History------------------*/
 .awardHistoryHeader {
     font-size: 4vw;
