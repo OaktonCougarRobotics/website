@@ -673,8 +673,8 @@ a.interestLink {
 
 .awardHistory2 {
     font-size: 1.5vw;
-    padding: 10vw 10vw 5vw 10vw;
-    color: darkred;
+    color: #d31b3a;
+    font-weight: bolder;
 }
 
 /*-----------------------------Outreach----------------------*/
