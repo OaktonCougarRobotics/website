@@ -78,12 +78,6 @@ header {
     font-weight: 700;
 }
 
-.header-title h3 a {
-    color:rgb(72, 4, 4);
-    font-size: small;
-    font-weight: 200;
-}
-
 .header-columns {
     display: flex;
     align-items: center;
@@ -243,10 +237,6 @@ a.interestLink {
         font-size: 20px;
     }
 
-    .header-title h3 {
-        font-size: small;
-    }
-
     /*-- when hamburger == active then the nth bar animates--*/
     .hamburger.active .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
@@ -269,10 +259,6 @@ a.interestLink {
 @media screen and (max-width: 500px) {
     .header-title h4 {
         font-size: 16px;
-    }
-
-    .header-title h3 {
-        font-size: small;
     }
 
     .bar {
@@ -846,10 +832,6 @@ a.interestLink {
     .header-title h4 a {
         font-size: 1em;
     }
-
-    .header-title h3 a {
-        font-size: small;
-    }
     .header-logo img {
         width: 2em;
         height: 2em;
@@ -972,6 +954,10 @@ a.interestLink {
     }
     .awardHistory1 {
         font-size: 2.5vw;
+        padding: 10vw 5vw 5vw 5vw;
+    }
+    .awardHistory2 {
+        font-size: 2.0vw;
         padding: 10vw 5vw 5vw 5vw;
     }
     /*-- outreach --*/ 
