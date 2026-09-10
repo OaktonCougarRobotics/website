@@ -1,0 +1,346 @@
+/* ==========================
+        ROBOT HERO
+========================== */
+
+
+.robot-hero {
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.robot-hero-background {
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        linear-gradient(
+            rgba(5,8,14,.5),
+            rgba(5,8,14,.6)
+        ),
+        url("/images/robot-placeholder.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    animation:
+        slowZoom
+        20s ease-in-out infinite alternate;
+
+}
+
+
+.robot-hero-background::after {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(201,151,0,.12),
+            transparent 45%
+        );
+
+}
+
+
+.robot-hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+}
+
+
+.robot-hero h1 {
+
+    font-size:
+    clamp(4rem,9vw,8rem);
+
+    line-height:.9;
+
+    font-weight:900;
+
+}
+
+
+.robot-hero h1 span {
+
+    color:var(--gold);
+
+}
+
+
+.robot-hero .description {
+
+    margin-top:28px;
+
+    max-width:700px;
+
+    font-size:1.3rem;
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================
+        ROBOT SECTIONS
+========================== */
+
+
+.robots {
+
+    padding:140px 0;
+
+}
+
+
+.robots > .container > h2 {
+
+    text-align:center;
+
+    font-size:clamp(2.8rem,5vw,4.5rem);
+
+    margin-bottom:100px;
+
+}
+
+
+/* ==========================
+        ROBOT CARD
+========================== */
+
+
+.robot-card {
+
+    margin-bottom:120px;
+
+    padding:50px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+}
+
+
+/* HEADER */
+
+
+.robot-header {
+
+    margin-bottom:50px;
+
+}
+
+
+.robot-header h2 {
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+}
+
+
+.robot-header .eyebrow {
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* SHOWCASE */
+
+
+.robot-showcase {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+
+.robot-image {
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+
+.robot-image img {
+
+    width:100%;
+
+    transition:.6s;
+
+}
+
+
+.robot-image:hover img {
+
+    transform:scale(1.05);
+
+}
+
+
+.robot-description h3 {
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.robot-description p {
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+    font-size:1.1rem;
+
+}
+
+
+/* ==========================
+        DESIGN PROCESS
+========================== */
+
+
+.design-process {
+
+    margin-top:70px;
+
+}
+
+
+.design-process h3 {
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.design-grid {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+
+
+.design-item {
+
+    background:
+        rgba(255,255,255,.03);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+
+.design-item img {
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:contain;
+
+    border-radius:16px;
+
+    margin-bottom:20px;
+
+}
+
+
+.design-item h4 {
+
+    font-size:1.3rem;
+
+}
+
+
+/* ==========================
+        MOBILE
+========================== */
+
+
+@media(max-width:900px) {
+
+
+    .robot-showcase {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .design-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .robot-card {
+
+        padding:30px;
+
+    }
+
+}

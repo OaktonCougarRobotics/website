@@ -1,0 +1,54 @@
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:16px 34px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.btn-primary{
+
+    background:var(--burgundy);
+
+    color:white;
+
+    box-shadow:
+    0 15px 45px rgba(122,0,25,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--gold);
+
+    color:var(--gold);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}

@@ -1,0 +1,88 @@
+@keyframes slowZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:
+        translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:
+        translate(-50%,10px);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:
+    fadeUp
+    1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+.card,
+.stat,
+.journey-image,
+.journey-content,
+.program-card{
+
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(6px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s cubic-bezier(.22,1,.36,1),
+        filter .9s ease;
+
+}
+
+.visible{
+
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+
+}

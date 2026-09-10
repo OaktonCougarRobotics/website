@@ -1,0 +1,262 @@
+/* ==========================
+        AWARDS HERO
+========================== */
+
+.awards-hero {
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.awards-hero-background {
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(5,8,14,1),
+            rgba(15,18,26,1)
+        );
+
+}
+
+
+.awards-hero-background::after {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(201,151,0,.12),
+            transparent 45%
+        );
+
+}
+
+
+.awards-hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+}
+
+
+.awards-hero h1 {
+
+    font-size:
+    clamp(4rem,9vw,8rem);
+
+    line-height:.9;
+
+    font-weight:900;
+
+}
+
+
+.awards-hero .description {
+
+    margin-top:30px;
+
+    max-width:700px;
+
+    color:var(--muted);
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================
+        AWARD SECTIONS
+========================== */
+
+.awards-current,
+.awards-previous,
+.awards-past {
+
+    padding:140px 0;
+
+}
+
+
+.awards-previous {
+
+    background:
+        rgba(255,255,255,.02);
+
+}
+
+
+.awards-past {
+
+    padding-bottom:180px;
+
+}
+
+
+.awards-current h2,
+.awards-previous h2,
+.awards-past h2 {
+
+    font-size:
+        clamp(3rem,5vw,4.5rem);
+
+    line-height:1;
+
+    margin-bottom:70px;
+
+}
+
+
+
+/* ==========================
+        TEAM SECTIONS
+========================== */
+
+.award-section {
+
+    margin-bottom:70px;
+
+}
+
+
+.award-section:last-child {
+
+    margin-bottom:0;
+
+}
+
+
+.award-section h3 {
+
+    font-size:
+        clamp(2rem,3vw,3rem);
+
+    margin-bottom:30px;
+
+    color:var(--gold);
+
+}
+
+
+
+/* ==========================
+        AWARD LIST
+========================== */
+
+.award-list {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+.award-item {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:25px 30px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    color:white;
+
+    line-height:1.5;
+
+    transition:.35s;
+
+}
+
+
+.award-item:hover {
+
+    transform:translateY(-5px);
+
+    border-color:var(--gold);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.3);
+
+}
+
+
+.award-icon {
+
+    flex-shrink:0;
+
+    font-size:1.8rem;
+
+}
+
+
+
+/* ==========================
+        MOBILE
+========================== */
+
+@media(max-width:900px) {
+
+    .award-list {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .awards-current,
+    .awards-previous,
+    .awards-past {
+
+        padding:100px 0;
+
+    }
+
+
+    .award-section {
+
+        margin-bottom:60px;
+
+    }
+
+}

@@ -1,0 +1,300 @@
+/* ==========================
+        EVENTS HERO
+========================== */
+
+.events-hero {
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.events-hero-background {
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        linear-gradient(
+            rgba(5,8,14,.5),
+            rgba(5,8,14,.6),
+        );
+        /* url("/images/team-placeholder.jpg"); */
+
+    background-size:cover;
+
+    background-position:center;
+
+    animation:
+        slowZoom
+        20s ease-in-out infinite alternate;
+
+}
+
+
+.events-hero-background::after {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(201,151,0,.12),
+            transparent 45%
+        );
+
+}
+
+
+.events-hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+}
+
+
+.events-hero h1 {
+
+    font-size:
+    clamp(4rem,9vw,8rem);
+
+    line-height:.9;
+
+    font-weight:900;
+
+}
+
+
+.events-hero h1 span {
+
+    color:var(--gold);
+
+}
+
+
+.events-hero .description {
+
+    margin-top:30px;
+
+    max-width:700px;
+
+    color:var(--muted);
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================
+        GENERAL SECTIONS
+========================== */
+
+.calendar,
+.upcoming-events,
+.competition-schedule,
+.outreach,
+.timeline {
+
+    padding:140px 0;
+
+}
+
+
+.calendar h2,
+.upcoming-events h2,
+.competition-schedule h2,
+.outreach h2,
+.timeline h2 {
+
+    text-align:center;
+
+    font-size:
+    clamp(2.8rem,5vw,4.5rem);
+
+    margin-bottom:60px;
+
+}
+
+
+/* ==========================
+        CALENDAR
+========================== */
+
+.calendar-container {
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:20px;
+
+}
+
+
+.calendar-placeholder {
+
+    min-height:600px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--muted);
+
+    font-size:1.3rem;
+
+}
+
+.calendar-frame {
+
+    width:100%;
+
+    height:700px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+}
+
+
+/* ==========================
+        EVENT CARDS
+========================== */
+
+.event-grid {
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+.event-card {
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+
+.event-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35);
+
+}
+
+
+.event-date {
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+
+.event-card h3 {
+
+    font-size:1.8rem;
+
+    margin-bottom:15px;
+
+}
+
+
+.event-location {
+
+    margin-bottom:20px;
+
+    color:var(--muted);
+
+}
+
+
+.event-description {
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================
+        PLACEHOLDER SECTIONS
+========================== */
+
+.competition-schedule p,
+.outreach p,
+.timeline p {
+
+    text-align:center;
+
+    color:var(--muted);
+
+    font-size:1.2rem;
+
+}
+
+
+/* ==========================
+        MOBILE
+========================== */
+
+@media(max-width:900px){
+
+    .event-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

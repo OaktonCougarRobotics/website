@@ -1,0 +1,156 @@
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    transition:.35s;
+
+    backdrop-filter:blur(18px);
+
+    background:
+    rgba(9,11,16,.35);
+
+    border-bottom:
+    1px solid rgba(255,255,255,.05);
+
+}
+
+.navbar .container{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    padding:22px 0;
+
+    gap:50px;
+
+}
+
+.logo{
+
+    font-size:1.4rem;
+
+    font-weight:800;
+
+    color:var(--gold);
+
+    letter-spacing:.05em;
+
+    white-space:nowrap;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:24px;
+
+    flex-wrap:nowrap;
+
+    white-space:nowrap;
+
+}
+
+nav a{
+
+    color:white;
+
+    opacity:.8;
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    color:var(--gold);
+
+    opacity:1;
+
+}
+
+/* ==========================
+   Teams Dropdown
+========================== */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 0;
+}
+
+.chevron {
+    transition: transform .3s ease;
+}
+
+.nav-dropdown:hover .chevron {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+
+    min-width: 220px;
+
+    background: rgba(20,20,25,.95);
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+
+    padding: 12px 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 12px 20px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: .25s;
+}
+
+.dropdown-menu a:hover {
+    color: var(--gold);
+    background: rgba(255,255,255,.04);
+}
