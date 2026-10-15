@@ -38,11 +38,15 @@ a:visited {
 
 /*-- Givebutter donate button container --*/
 .button-container {
-    margin-left: auto;
+    width: 145px;
+    min-width: 145px;
+    max-width: 145x;
+    height: 48px;
+    overflow: hidden;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    height: 50px;
+    justify-content: center;
 }
 
 /*-- header --*/
