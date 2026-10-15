@@ -36,6 +36,15 @@ a:visited {
     overflow-y: hidden;
 }
 
+/*-- Givebutter donate button container --*/
+.button-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 44px;
+}
+
 /*-- header --*/
 header {
     width: 100%;
