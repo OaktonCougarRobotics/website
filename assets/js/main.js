@@ -16,19 +16,16 @@ function topFunction() {
   });
 }
 
-// Fetch and load the header
-fetch('header.html')
+// 1. Fetch and load the header
+fetch('includes/header.html')
     .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
+        if (!response.ok) throw new Error('Network response was not ok');
         return response.text();
     })
     .then(data => {
-        // 1. Inject the header into the page
         document.getElementById('header-placeholder').innerHTML = data;
 
-        // 2. INITIALIZE MOBILE MENU *AFTER* THE HEADER EXISTS
+        // Initialize mobile menu elements *after* header exists
         const hamburger = document.querySelector('.hamburger');
         const mobileMenu = document.querySelector('.mobile-menu');
         const teamDropdownButton = document.querySelector('.mobile-menu .dropdown-button');
@@ -47,6 +44,15 @@ fetch('header.html')
             });
         }
     })
-    .catch(error => {
-        console.error('Error loading the header:', error);
-    });
+    .catch(error => console.error('Error loading the header:', error));
+
+// 2. Fetch and load the footer
+fetch('includes/footer.html')
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading the footer:', error));
