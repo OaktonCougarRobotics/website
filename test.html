@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. The placeholder where header.html will be injected -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1>Welcome to My Home Page!</h1>
+        <p>This page loads the header dynamically using JavaScript.</p>
+    </main>
+
+    <!-- 2. The script that fetches header.html and injects it -->
+    <script>
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading the header:', error);
+            });
+    </script>
+
+</body>
+</html>
