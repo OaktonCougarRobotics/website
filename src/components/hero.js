@@ -25,7 +25,7 @@ export function Hero() {
 
         <div class="buttons">
 
-            <a href="/sponsors.html" class="btn btn-primary">
+            <a href="https://giveb.co/s/zAvzlp" class="btn btn-primary">
                 Sponsor the Team
             </a>
 

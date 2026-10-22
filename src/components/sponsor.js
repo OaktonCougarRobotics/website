@@ -19,10 +19,18 @@ return `
         <p class="description">
 
             We greatly appreciate our sponsors!
-            If you want to reach out regarding
+            If you have any questions regarding
             sponsorships, please email our business 
             team: 
             cougar.robotics.business@gmail.com.
+
+            <div class="buttons">
+
+            <a href="https://giveb.co/s/zAvzlp" class="btn btn-primary">
+                Sponsor the Team
+            </a>
+
+        </div>
 
         </p>
 
