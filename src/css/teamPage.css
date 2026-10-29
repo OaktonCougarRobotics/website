@@ -1,0 +1,210 @@
+/* ==========================
+        TEAM DETAIL HERO
+========================== */
+
+
+.team-detail-hero {
+
+    height:60vh;
+
+    min-height:450px;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+.team-detail-background {
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.team-detail-content {
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+}
+
+
+
+.team-detail-content h1 {
+
+    font-size:
+    clamp(3.5rem,7vw,6rem);
+
+    line-height:.95;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.team-detail-content h3 {
+
+    color:var(--gold);
+
+    font-size:1.5rem;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.team-detail-content p:last-child {
+
+    max-width:700px;
+
+    color:var(--muted);
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================
+        ABOUT SECTION
+========================== */
+
+
+.team-about {
+
+    padding:120px 0;
+
+}
+
+
+
+.team-about h2,
+.team-awards h2 {
+
+    text-align:center;
+
+    font-size:3rem;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.team-about p {
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+    font-size:1.15rem;
+
+}
+
+
+
+/* ==========================
+        AWARDS
+========================== */
+
+
+.team-awards {
+
+    padding:100px 0;
+
+}
+
+
+
+.award-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.award-card {
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+
+
+.award-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+
+
+@media(max-width:900px) {
+
+
+    .award-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+.team-delay {
+
+    animation-delay: .2s;
+
+}

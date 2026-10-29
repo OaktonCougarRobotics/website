@@ -1,0 +1,261 @@
+/* ==========================
+        OUTREACH HERO
+========================== */
+
+.outreach-hero {
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.outreach-hero-background {
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(5,8,14,1),
+            rgba(15,18,26,1)
+        );
+
+}
+
+
+.outreach-hero-background::after {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(201,151,0,.12),
+            transparent 45%
+        );
+
+}
+
+
+.outreach-hero-content {
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(900px,92%);
+
+    margin:auto;
+
+}
+
+
+.outreach-hero h1 {
+
+    font-size:
+    clamp(4rem,9vw,8rem);
+
+    line-height:.9;
+
+    font-weight:900;
+
+}
+
+
+.outreach-hero .description {
+
+    margin-top:30px;
+
+    max-width:700px;
+
+    color:var(--muted);
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+}
+
+
+
+/* ==========================
+        OUTREACH EVENTS
+========================== */
+
+.outreach-events {
+
+    padding:140px 0;
+
+}
+
+
+.outreach-event {
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    margin-bottom:140px;
+
+}
+
+
+.outreach-event:last-child {
+
+    margin-bottom:0;
+
+}
+
+
+/* ==========================
+        ALTERNATING LAYOUT
+========================== */
+
+.outreach-event.reverse .outreach-image {
+
+    order:2;
+
+}
+
+
+.outreach-event.reverse .outreach-content {
+
+    order:1;
+
+}
+
+
+
+/* ==========================
+        IMAGES
+========================== */
+
+.outreach-image {
+
+    height:450px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.35);
+
+}
+
+
+.outreach-image img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+
+.outreach-event:hover .outreach-image img {
+
+    transform:scale(1.04);
+
+}
+
+
+
+/* ==========================
+        CONTENT
+========================== */
+
+.outreach-content {
+
+    max-width:600px;
+
+}
+
+
+.outreach-content h2 {
+
+    font-size:
+        clamp(2.5rem,4vw,4rem);
+
+    line-height:1;
+
+    margin-bottom:30px;
+
+}
+
+
+.outreach-content p {
+
+    color:var(--muted);
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+}
+
+
+
+/* ==========================
+        MOBILE
+========================== */
+
+@media(max-width:900px) {
+
+    .outreach-event {
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+        margin-bottom:100px;
+
+    }
+
+
+    .outreach-event.reverse .outreach-image {
+
+        order:1;
+
+    }
+
+
+    .outreach-event.reverse .outreach-content {
+
+        order:2;
+
+    }
+
+
+    .outreach-image {
+
+        height:350px;
+
+    }
+
+}
