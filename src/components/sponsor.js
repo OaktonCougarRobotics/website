@@ -49,7 +49,7 @@ return `
 
 <div class="calendar-container">
 
-    <img src="/images/SponsorshipLevels.png" class="sponsor-image" />
+    <img src="/images/updatedSponsorLevels.webp" class="sponsor-image" />
 
 </div>
 
