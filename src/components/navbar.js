@@ -28,6 +28,7 @@ export function Navbar() {
                 <a href="/events.html">Events</a>
                 <a href="/outreach.html">Outreach</a>
                 <a href="/sponsors.html">Sponsors</a>
+                <a href="/current.html">The Current</a>
                 <a href="/awards.html">Award History</a>
                 <a href="/photos.html">Team Photos</a>
                 <a href="/reach-out.html">Reach Out to Us</a>

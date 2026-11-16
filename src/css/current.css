@@ -1,0 +1,23 @@
+.current-page {
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+.current-page h1 {
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.current-image {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.current-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}

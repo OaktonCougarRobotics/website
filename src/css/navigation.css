@@ -25,14 +25,17 @@
 
     display:flex;
 
-    justify-content:flex-start;
+    justify-content:space-between;
 
     align-items:center;
 
-    padding:22px 0;
+    padding: 22px 20px;
 
-    gap:25px;
+    gap: 20px;
 
+    width: 100%;
+
+    max-width: 100%;
 }
 
 .logo{
