@@ -32,6 +32,10 @@ export function Navbar() {
                 <a href="/photos.html">Team Photos</a>
                 <a href="/reach-out.html">Reach Out to Us</a>
                 <a href="/what-is-robotics.html">What is Robotics?</a>
+
+                <div class="donate-button">
+                    <givebutter-widget id="jDray6"></givebutter-widget>
+                </div>
             </nav>
 
         </div>
