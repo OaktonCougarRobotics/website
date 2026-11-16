@@ -86,6 +86,12 @@ export function Sponsors() {
             name: "Fabworks",
             image: "/images/fabworks.jpg",
             website: "https://www.fabworks.com/"
+        },
+
+        {
+            name: "Send Cut Send",
+            image: "sendCutSend.PNG",
+            website: "https://sendcutsend.com/?srsltid=AYCX9vKdDdibVivVmuCHY1GWJDo05z2BM_FR5pe3ehG48CmTtQu8bjMP"
         }
 
     ];
