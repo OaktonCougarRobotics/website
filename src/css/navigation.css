@@ -255,8 +255,16 @@ nav a:hover{
         transform: none;
     }
 
-    /* Donate button */
     .navbar .donate-button {
         margin: 12px 0 0;
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+        justify-content: flex-start;
+    }
+
+    .navbar .donate-button givebutter-widget {
+        display: block;
+        max-width: 100%;
     }
 }
