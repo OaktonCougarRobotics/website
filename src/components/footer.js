@@ -20,7 +20,7 @@ export function Footer() {
 
             <a href="/">About</a>
             <a href="/teams.html">Teams</a>
-            <a href="/robot.html">Robot</a>
+            <a href="/robot.html">Robots</a>
             <a href="/events.html">Events</a>
             <a href="/#sponsors">Sponsors</a>
 
