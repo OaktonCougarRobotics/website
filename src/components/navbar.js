@@ -32,7 +32,7 @@ export function Navbar() {
                     </div>
                 </div>
 
-                <a href="/robot.html">Robot</a>
+                <a href="/robot.html">Robots</a>
                 <a href="/events.html">Events</a>
                 <a href="/outreach.html">Outreach</a>
                 <a href="/sponsors.html">Sponsors</a>
