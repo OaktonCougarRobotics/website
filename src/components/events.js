@@ -69,24 +69,24 @@ return `
 <div class="event-grid">
 
 ${EventCard(
-"Date",
-"Event Name",
-"Location",
-"Description"
+"Nov 13-14",
+"FRC RoboLoco",
+"Loudon",
+"Learning more about outreach and how XRPs could be used for outreach."
 )}
 
 ${EventCard(
-"Date",
-"Event Name",
-"Location",
-"Description"
+"Nov 21 @ 9-3",
+"Mock Scrimmage",
+"Oakton HS in Cougar Hall",
+"A hands on learning experience with driving the robot and other competition skills. Rotating to learn about judging, awards, mock interviews."
 )}
 
 ${EventCard(
-"Date",
-"Event Name",
-"Location",
-"Description"
+"Dec 21",
+"BunnyBots",
+"Montgomery HS, Silver Spring, MD",
+"Learn data science applied to robotics. The Blair Robot Project team hosts BunnyBots annually and has invited our team to learn how they collect data and apply it to competition. We are there to learn, not compete."
 )}
 
 </div>
