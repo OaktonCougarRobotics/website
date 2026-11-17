@@ -18,11 +18,11 @@ export function Footer() {
 
         <div class="footer-links">
 
-            <a href="#about">About</a>
-            <a href="#teams">Teams</a>
-            <a href="#robot">Robot</a>
-            <a href="#events">Events</a>
-            <a href="#sponsors">Sponsors</a>
+            <a href="/">About</a>
+            <a href="/teams.html">Teams</a>
+            <a href="/robot.html">Robot</a>
+            <a href="/events.html">Events</a>
+            <a href="/#sponsors">Sponsors</a>
 
         </div>
 
