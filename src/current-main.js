@@ -11,7 +11,7 @@ ${Navbar()}
 <main class="current-page">
     <div class="container">
         <div class="current-image">
-            <img src="/images/team-placeholder.jpg" alt="The Current" />
+            <img src="/images/11.14.current.webp" alt="The Current" />
         </div>
     </div>
 </main>
