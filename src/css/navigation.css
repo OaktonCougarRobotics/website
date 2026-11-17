@@ -164,3 +164,99 @@ nav a:hover{
     align-items: center;
     flex-shrink: 0;
 }
+
+
+/* ==========================
+   Mobile Navigation
+========================== */
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: white;
+    margin: 6px 0;
+    border-radius: 2px;
+}
+
+@media (max-width: 1100px) {
+
+    .navbar .container {
+        position: relative;
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 12px 20px 20px;
+        background: rgba(9, 11, 16, .97);
+        backdrop-filter: blur(18px);
+
+        max-height: calc(100vh - 65px);
+        overflow-y: auto;
+        white-space: normal;
+    }
+
+    .navbar nav.nav-open {
+        display: flex;
+    }
+
+    .navbar nav > a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    /* Teams submenu */
+    .navbar .dropdown-menu {
+        position: static;
+        transform: none;
+
+        display: block;
+        opacity: 1;
+        visibility: visible;
+
+        background: transparent;
+        border: none;
+        box-shadow: none;
+
+        padding: 0 0 8px 16px;
+    }
+
+    .navbar .dropdown-menu a {
+        padding: 10px 12px;
+    }
+
+    .navbar .nav-dropdown:hover .dropdown-menu {
+        transform: none;
+    }
+
+    /* Donate button */
+    .navbar .donate-button {
+        margin: 12px 0 0;
+    }
+}

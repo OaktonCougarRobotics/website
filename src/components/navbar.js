@@ -1,3 +1,4 @@
+
 export function Navbar() {
     return `
     <header class="navbar">
@@ -7,9 +8,16 @@ export function Navbar() {
                 OAKTON ROBOTICS
             </div>
 
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav>
 
                 <a href="/">Home</a>
+
                 <div class="nav-dropdown">
                     <a href="/teams.html" class="dropdown-toggle">
                         Teams
@@ -21,9 +29,9 @@ export function Navbar() {
                         <a href="/ftc-369.html">FTC 369</a>
                         <a href="/business.html">Business</a>
                         <a href="/rnd.html">R&amp;D</a>
-
                     </div>
                 </div>
+
                 <a href="/robot.html">Robot</a>
                 <a href="/events.html">Events</a>
                 <a href="/outreach.html">Outreach</a>
@@ -37,9 +45,21 @@ export function Navbar() {
                 <div class="donate-button">
                     <givebutter-widget id="jDray6"></givebutter-widget>
                 </div>
+
             </nav>
 
         </div>
     </header>
     `;
 }
+
+document.addEventListener('click', (event) => {
+    const toggle = event.target.closest('.mobile-menu-toggle');
+
+    if (toggle) {
+        const nav = toggle.parentElement.querySelector('nav');
+        const isOpen = nav.classList.toggle('nav-open');
+
+        toggle.setAttribute('aria-expanded', String(isOpen));
+    }
+});
