@@ -11,6 +11,13 @@ import { Footer } from "./components/footer";
 
 document.querySelector('#app').innerHTML = `
 ${Navbar()}
+
+<div class="anniversary-banner">
+    <span class="anniversary-trophy">🏆</span>
+    <span>Celebrating 25 Years of FRC!</span>
+    <span class="anniversary-trophy">🏆</span>
+</div>
+
 ${Hero()}
 ${Stats()}
 ${Why()}
