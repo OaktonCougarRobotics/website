@@ -12,6 +12,12 @@ document.querySelector('#app').innerHTML = `
 
 ${Navbar()}
 
+<div class="anniversary-banner">
+    <span class="anniversary-trophy">🏆</span>
+    <span>Celebrating 25 Years of FRC!</span>
+    <span class="anniversary-trophy">🏆</span>
+</div>
+
 ${TeamPage(
 
     "FRC Team 623",
